@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C23CF6C428204CD500BE09BF /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23CF6C328204CD500BE09BF /* ForgotPasswordViewController.swift */; };
 		C281A8DE281FC41500F712A9 /* ProductCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C281A8DD281FC41500F712A9 /* ProductCollectionViewCell.swift */; };
 		C281A8E1281FD89A00F712A9 /* FeaturedProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = C281A8E0281FD89A00F712A9 /* FeaturedProduct.swift */; };
 		C298B691281F09C800305846 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C298B68F281F09C800305846 /* LoginViewController.swift */; };
@@ -44,6 +45,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C23CF6C328204CD500BE09BF /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
 		C281A8DD281FC41500F712A9 /* ProductCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCollectionViewCell.swift; sourceTree = "<group>"; };
 		C281A8E0281FD89A00F712A9 /* FeaturedProduct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedProduct.swift; sourceTree = "<group>"; };
 		C298B68F281F09C800305846 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -117,6 +119,7 @@
 				C298B697281F39FC00305846 /* MainTabBarController.swift */,
 				C298B698281F39FC00305846 /* MainTabBarController.xib */,
 				C281A8DD281FC41500F712A9 /* ProductCollectionViewCell.swift */,
+				C23CF6C328204CD500BE09BF /* ForgotPasswordViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -314,6 +317,7 @@
 				C2B21D24281D8C8D00470BE5 /* AppDelegate.swift in Sources */,
 				C281A8DE281FC41500F712A9 /* ProductCollectionViewCell.swift in Sources */,
 				C298B699281F39FC00305846 /* MainTabBarController.swift in Sources */,
+				C23CF6C428204CD500BE09BF /* ForgotPasswordViewController.swift in Sources */,
 				C298B691281F09C800305846 /* LoginViewController.swift in Sources */,
 				C2B21D26281D8C8D00470BE5 /* SceneDelegate.swift in Sources */,
 				C298B695281F37C700305846 /* HomeTabViewController.swift in Sources */,
