@@ -389,7 +389,81 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="X3A-0E-fkY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2369.5652173913045" y="2195.7589285714284"/>
+            <point key="canvasLocation" x="1635" y="2263"/>
+        </scene>
+        <!--Product Page-->
+        <scene sceneID="LAi-xk-BV5">
+            <objects>
+                <viewController storyboardIdentifier="ProductDetailViewController" id="xt9-IX-JEy" customClass="ProductDetailViewController" customModule="it17006408" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="c6P-CD-EWf">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rer-h8-uaH">
+                                <rect key="frame" x="87" y="106" width="240" height="150"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Product Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sez-hH-4d2">
+                                <rect key="frame" x="20" y="287" width="231" height="20"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Code:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l0P-M7-vG4">
+                                <rect key="frame" x="20" y="315" width="39" height="17"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="number" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UYm-qw-yt6">
+                                <rect key="frame" x="64" y="315" width="68" height="17"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="units available" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hAT-4d-qBU">
+                                <rect key="frame" x="263" y="315" width="131" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Price" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x9Y-0v-JNi">
+                                <rect key="frame" x="20" y="340" width="112" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="IqV-HV-DJe"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="sez-hH-4d2" firstAttribute="top" secondItem="rer-h8-uaH" secondAttribute="bottom" constant="30" id="9Ts-v3-1h6"/>
+                            <constraint firstItem="rer-h8-uaH" firstAttribute="top" secondItem="IqV-HV-DJe" secondAttribute="top" constant="18" id="M3T-gg-9TS"/>
+                            <constraint firstItem="UYm-qw-yt6" firstAttribute="leading" secondItem="l0P-M7-vG4" secondAttribute="trailing" constant="5" id="X5D-ND-9RZ"/>
+                            <constraint firstItem="IqV-HV-DJe" firstAttribute="trailing" secondItem="rer-h8-uaH" secondAttribute="trailing" constant="87" id="dgG-th-EJ6"/>
+                            <constraint firstItem="sez-hH-4d2" firstAttribute="leading" secondItem="IqV-HV-DJe" secondAttribute="leading" constant="20" id="gR2-Dc-eMl"/>
+                            <constraint firstItem="l0P-M7-vG4" firstAttribute="top" secondItem="sez-hH-4d2" secondAttribute="bottom" constant="8" id="hoM-5Q-I2Q"/>
+                            <constraint firstItem="rer-h8-uaH" firstAttribute="leading" secondItem="IqV-HV-DJe" secondAttribute="leading" constant="87" id="lRA-4h-Ku3"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Product Page" id="dN9-jJ-rgs">
+                        <barButtonItem key="leftBarButtonItem" image="MenuIcon" id="QTk-Mi-j0W"/>
+                        <barButtonItem key="rightBarButtonItem" image="magnifyingglass" catalog="system" id="ufM-QN-1bP">
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="availableUnitsLabel" destination="hAT-4d-qBU" id="CM8-Zl-q3i"/>
+                        <outlet property="productCodeLabel" destination="UYm-qw-yt6" id="x4w-61-Ka1"/>
+                        <outlet property="productImageView" destination="rer-h8-uaH" id="2sk-Vh-xnY"/>
+                        <outlet property="productNameLabel" destination="sez-hH-4d2" id="Ov3-dK-yGh"/>
+                        <outlet property="productPriceLabel" destination="x9Y-0v-JNi" id="s7N-fd-981"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pee-1q-kfu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2350.7246376811595" y="2262.7232142857142"/>
         </scene>
         <!--Home Tab View Controller-->
         <scene sceneID="MZw-bO-u8A">

@@ -16,7 +16,7 @@ class HomeTabViewController: UIViewController {
         self.navigationItem.setHidesBackButton(true, animated: false);
         
         featureProductsCollectionView.dataSource = self
-        //featureProductsCollectionView.delegate = self
+        featureProductsCollectionView.delegate = self
         //featureProductsCollectionView.collectionViewLayout = UICollectionViewLayout()
     }
 
@@ -34,7 +34,7 @@ class HomeTabViewController: UIViewController {
 
 }
 
-extension HomeTabViewController: UICollectionViewDataSource {
+extension HomeTabViewController: UICollectionViewDataSource, UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return featuredproducts.count
     }
@@ -44,7 +44,20 @@ extension HomeTabViewController: UICollectionViewDataSource {
         cell.setup(with: featuredproducts[indexPath.row])
         return cell
     }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let detailViewController = self.storyboard!.instantiateViewController(withIdentifier: "ProductDetailViewController") as? ProductDetailViewController
+        
+        detailViewController?.setupDetails(with: featuredproducts[indexPath.row])
+        
+        //let tap = UITapGestureRecognizer(target: self, action: #selector(self.someViewInMyCellTapped(_:)))
+        //someViewInMyCell.addGestureRecognizer(tap)
+        //tap.cancelsTouchesInView = false
+        
+        self.navigationController!.pushViewController(detailViewController!, animated: true)
+    }
 }
+
 extension HomeTabViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: 200, height: 250)

@@ -21,5 +21,5 @@ class ProductCollectionViewCell: UICollectionViewCell {
         productImage.image = product.image
         productName.text = product.poductName
         productPrice.text = product.productPrice
-    }
+    }    
 }

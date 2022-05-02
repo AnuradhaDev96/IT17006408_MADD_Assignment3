@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		C23CF6C428204CD500BE09BF /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23CF6C328204CD500BE09BF /* ForgotPasswordViewController.swift */; };
 		C23CF6C62820618C00BE09BF /* AllFeaturedProductsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23CF6C52820618C00BE09BF /* AllFeaturedProductsViewController.swift */; };
+		C23CF6C8282077E100BE09BF /* ProductDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23CF6C7282077E100BE09BF /* ProductDetailViewController.swift */; };
 		C281A8DE281FC41500F712A9 /* ProductCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C281A8DD281FC41500F712A9 /* ProductCollectionViewCell.swift */; };
 		C281A8E1281FD89A00F712A9 /* FeaturedProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = C281A8E0281FD89A00F712A9 /* FeaturedProduct.swift */; };
 		C298B691281F09C800305846 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C298B68F281F09C800305846 /* LoginViewController.swift */; };
@@ -48,6 +49,7 @@
 /* Begin PBXFileReference section */
 		C23CF6C328204CD500BE09BF /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
 		C23CF6C52820618C00BE09BF /* AllFeaturedProductsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllFeaturedProductsViewController.swift; sourceTree = "<group>"; };
+		C23CF6C7282077E100BE09BF /* ProductDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailViewController.swift; sourceTree = "<group>"; };
 		C281A8DD281FC41500F712A9 /* ProductCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCollectionViewCell.swift; sourceTree = "<group>"; };
 		C281A8E0281FD89A00F712A9 /* FeaturedProduct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedProduct.swift; sourceTree = "<group>"; };
 		C298B68F281F09C800305846 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -123,6 +125,7 @@
 				C281A8DD281FC41500F712A9 /* ProductCollectionViewCell.swift */,
 				C23CF6C328204CD500BE09BF /* ForgotPasswordViewController.swift */,
 				C23CF6C52820618C00BE09BF /* AllFeaturedProductsViewController.swift */,
+				C23CF6C7282077E100BE09BF /* ProductDetailViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -322,6 +325,7 @@
 				C298B699281F39FC00305846 /* MainTabBarController.swift in Sources */,
 				C23CF6C428204CD500BE09BF /* ForgotPasswordViewController.swift in Sources */,
 				C298B691281F09C800305846 /* LoginViewController.swift in Sources */,
+				C23CF6C8282077E100BE09BF /* ProductDetailViewController.swift in Sources */,
 				C2B21D26281D8C8D00470BE5 /* SceneDelegate.swift in Sources */,
 				C23CF6C62820618C00BE09BF /* AllFeaturedProductsViewController.swift in Sources */,
 				C298B695281F37C700305846 /* HomeTabViewController.swift in Sources */,

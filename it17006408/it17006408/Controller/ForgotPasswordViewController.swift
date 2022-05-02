@@ -22,7 +22,8 @@ class ForgotPasswordViewController: UIViewController {
         
         passwordResetAlert.addAction(UIAlertAction(title: "Go to Login >", style: .default) {(_) -> Void in
             let uivc = self.storyboard!.instantiateViewController(withIdentifier: "LViewController")
-            self.navigationController!.pushViewController(uivc, animated: true)        })
+            self.navigationController!.pushViewController(uivc, animated: true)
+        })
         
         linkSentAlert.addAction(UIAlertAction(title: "Close", style: .cancel, handler: { action in
             //
