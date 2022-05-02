@@ -213,7 +213,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1nd-cQ-9AW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2067" y="1542"/>
+            <point key="canvasLocation" x="2976.811594202899" y="1541.5178571428571"/>
         </scene>
         <!--Cart-->
         <scene sceneID="ILb-tc-aQP">
@@ -248,7 +248,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5Hr-XE-iky" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2672" y="1542"/>
+            <point key="canvasLocation" x="3581.1594202898555" y="1541.5178571428571"/>
         </scene>
         <!--More-->
         <scene sceneID="obP-vb-5tX">
@@ -283,33 +283,115 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vwd-O0-wDE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3275" y="1542"/>
+            <point key="canvasLocation" x="4184.057971014493" y="1541.5178571428571"/>
         </scene>
-        <!--View Controller-->
+        <!--Featured Products-->
         <scene sceneID="er2-Rq-Ig3">
             <objects>
-                <viewController id="yzp-EJ-dHG" sceneMemberID="viewController">
+                <viewController id="yzp-EJ-dHG" customClass="AllFeaturedProductsViewController" customModule="it17006408" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dhy-2d-ee5">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Brixton" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="63i-Sk-MPM">
-                                <rect key="frame" x="162" y="300" width="54" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="nKm-TW-U4p">
+                                <rect key="frame" x="30" y="113" width="354" height="700"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="B9k-y9-idP">
+                                    <size key="itemSize" width="164" height="205"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ProductCollectionViewCell" id="BgC-cw-V7t" customClass="ProductCollectionViewCell" customModule="it17006408" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="164" height="205"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="HWn-WT-rDO">
+                                            <rect key="frame" x="0.0" y="0.0" width="164" height="205"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="tga-0A-POH">
+                                                    <rect key="frame" x="0.0" y="0.0" width="164" height="101"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="101" id="Ss1-q5-9GE"/>
+                                                        <constraint firstAttribute="width" constant="164" id="fUw-kx-dWG"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="akX-0k-rHB">
+                                                    <rect key="frame" x="8" y="111" width="146" height="19.5"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="16"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yPR-Cr-cmz">
+                                                    <rect key="frame" x="5" y="166" width="154" height="28.5"/>
+                                                    <state key="normal" title="Button"/>
+                                                    <buttonConfiguration key="configuration" style="filled" title="ADD TO CART">
+                                                        <fontDescription key="titleFontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="12"/>
+                                                        <color key="baseBackgroundColor" red="0.0" green="0.65708352290000005" blue="0.62493381199999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </buttonConfiguration>
+                                                </button>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vw4-gz-bP4">
+                                                    <rect key="frame" x="8" y="140.5" width="146" height="17"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="14"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="akX-0k-rHB" firstAttribute="top" secondItem="tga-0A-POH" secondAttribute="bottom" constant="10" id="70W-4u-JET"/>
+                                                <constraint firstItem="vw4-gz-bP4" firstAttribute="top" secondItem="akX-0k-rHB" secondAttribute="bottom" constant="10" id="Q7Q-Gp-Gov"/>
+                                                <constraint firstItem="vw4-gz-bP4" firstAttribute="leading" secondItem="HWn-WT-rDO" secondAttribute="leading" constant="8" id="R5u-Pl-hkj"/>
+                                                <constraint firstAttribute="trailing" secondItem="akX-0k-rHB" secondAttribute="trailing" constant="10" id="SNe-gl-JYA"/>
+                                                <constraint firstItem="akX-0k-rHB" firstAttribute="leading" secondItem="HWn-WT-rDO" secondAttribute="leading" constant="8" id="SR1-Cd-s7b"/>
+                                                <constraint firstItem="yPR-Cr-cmz" firstAttribute="leading" secondItem="HWn-WT-rDO" secondAttribute="leading" constant="5" id="ViE-ZS-UE2"/>
+                                                <constraint firstItem="vw4-gz-bP4" firstAttribute="top" secondItem="akX-0k-rHB" secondAttribute="bottom" constant="10" id="WlX-yi-TwP"/>
+                                                <constraint firstItem="tga-0A-POH" firstAttribute="leading" secondItem="HWn-WT-rDO" secondAttribute="leading" id="Zqs-ze-aje"/>
+                                                <constraint firstItem="yPR-Cr-cmz" firstAttribute="top" secondItem="vw4-gz-bP4" secondAttribute="bottom" constant="8.5" id="cU3-5q-X3P"/>
+                                                <constraint firstAttribute="trailing" secondItem="tga-0A-POH" secondAttribute="trailing" id="d1W-dG-zeI"/>
+                                                <constraint firstAttribute="trailing" secondItem="yPR-Cr-cmz" secondAttribute="trailing" constant="5" id="f40-Dl-bKN"/>
+                                                <constraint firstAttribute="trailing" secondItem="akX-0k-rHB" secondAttribute="trailing" constant="10" id="f48-mI-ujm"/>
+                                                <constraint firstAttribute="trailing" secondItem="vw4-gz-bP4" secondAttribute="trailing" constant="10" id="kz9-6x-lWd"/>
+                                                <constraint firstItem="tga-0A-POH" firstAttribute="top" secondItem="HWn-WT-rDO" secondAttribute="top" id="pOV-Kw-9Ch"/>
+                                                <constraint firstItem="tga-0A-POH" firstAttribute="centerX" secondItem="HWn-WT-rDO" secondAttribute="centerX" id="tIJ-9m-7j7"/>
+                                                <constraint firstItem="akX-0k-rHB" firstAttribute="leading" secondItem="HWn-WT-rDO" secondAttribute="leading" constant="8" id="uEg-AR-1Nf"/>
+                                                <constraint firstAttribute="bottom" secondItem="yPR-Cr-cmz" secondAttribute="bottom" constant="10.5" id="wjS-c0-9yb"/>
+                                            </constraints>
+                                        </collectionViewCellContentView>
+                                        <size key="customSize" width="164" height="205"/>
+                                        <connections>
+                                            <outlet property="addToCartBtn" destination="yPR-Cr-cmz" id="9L3-qT-jP6"/>
+                                            <outlet property="productImage" destination="tga-0A-POH" id="Lur-MT-vnJ"/>
+                                            <outlet property="productName" destination="akX-0k-rHB" id="cZc-E6-wzw"/>
+                                            <outlet property="productPrice" destination="vw4-gz-bP4" id="wDw-ai-eYl"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="P19-Sr-LUb"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="nKm-TW-U4p" firstAttribute="bottom" secondItem="P19-Sr-LUb" secondAttribute="bottom" id="9cu-eH-tb7"/>
+                            <constraint firstItem="nKm-TW-U4p" firstAttribute="top" secondItem="P19-Sr-LUb" secondAttribute="top" constant="25" id="WgZ-g2-sFu"/>
+                            <constraint firstItem="nKm-TW-U4p" firstAttribute="leading" secondItem="P19-Sr-LUb" secondAttribute="leading" constant="30" id="iFP-hy-oex"/>
+                            <constraint firstItem="P19-Sr-LUb" firstAttribute="trailing" secondItem="nKm-TW-U4p" secondAttribute="trailing" constant="30" id="uHA-gH-96m"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Featured Products" id="Dar-c2-KfB">
+                        <barButtonItem key="leftBarButtonItem" image="MenuIcon" id="ki0-kH-Ujv"/>
+                        <barButtonItem key="rightBarButtonItem" image="magnifyingglass" catalog="system" id="3Wp-hm-gYf">
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="allFeatureProductsCollectionView" destination="nKm-TW-U4p" id="lI8-UN-60Y"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="X3A-0E-fkY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="675" y="1640"/>
+            <point key="canvasLocation" x="2369.5652173913045" y="2195.7589285714284"/>
         </scene>
-        <!--Home-->
+        <!--Home Tab View Controller-->
         <scene sceneID="MZw-bO-u8A">
             <objects>
                 <viewController id="Bpy-7y-nBq" customClass="HomeTabViewController" customModule="it17006408" customModuleProvider="target" sceneMemberID="viewController">
@@ -427,6 +509,9 @@
                                         </fragment>
                                     </attributedString>
                                 </buttonConfiguration>
+                                <connections>
+                                    <segue destination="yzp-EJ-dHG" kind="show" id="G8x-XG-YSk"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="New Products" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nqo-fX-oHH">
                                 <rect key="frame" x="30" y="633" width="135" height="28.5"/>
@@ -502,16 +587,14 @@
                             <constraint firstItem="gpD-yW-Zpd" firstAttribute="leading" secondItem="7Hl-uA-Qrc" secondAttribute="leading" constant="30" id="xdz-cc-6wp"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Home" image="homekit" catalog="system" id="Lt7-j0-VA7">
-                        <color key="badgeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    </tabBarItem>
+                    <navigationItem key="navigationItem" id="1V0-Gx-Sik"/>
                     <connections>
                         <outlet property="featureProductsCollectionView" destination="8Ow-NV-c1l" id="Eag-pw-W4U"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3x6-7Y-f9P" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1462.3188405797102" y="1541.5178571428571"/>
+            <point key="canvasLocation" x="2372.463768115942" y="1541.5178571428571"/>
         </scene>
         <!--Main Tab Bar Controller-->
         <scene sceneID="gf6-VH-GZU">
@@ -524,7 +607,7 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="Bpy-7y-nBq" kind="relationship" relationship="viewControllers" id="Ny8-GD-0y2"/>
+                        <segue destination="EMA-Sd-L5y" kind="relationship" relationship="viewControllers" id="Ny8-GD-0y2"/>
                         <segue destination="8Xi-HG-jP4" kind="relationship" relationship="viewControllers" id="dUW-Tx-k4X"/>
                         <segue destination="dEx-Zz-caW" kind="relationship" relationship="viewControllers" id="BDz-7n-PFd"/>
                         <segue destination="7B0-6Q-2rH" kind="relationship" relationship="viewControllers" id="7jE-Jk-c7c"/>
@@ -796,6 +879,27 @@
             </objects>
             <point key="canvasLocation" x="-65" y="76"/>
         </scene>
+        <!--Home-->
+        <scene sceneID="M4B-y7-TDS">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="EMA-Sd-L5y" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Home" image="homekit" catalog="system" id="Lt7-j0-VA7">
+                        <color key="badgeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBarItem>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Cv6-Z7-ph1">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Bpy-7y-nBq" kind="relationship" relationship="rootViewController" id="OXo-fK-x3S"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YbR-yU-KsK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1462.3188405797102" y="1541.5178571428571"/>
+        </scene>
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="Xym-Ie-3QK"/>
@@ -807,6 +911,7 @@
         <image name="MyOrdersIcon" width="24" height="24"/>
         <image name="cart" catalog="system" width="128" height="102"/>
         <image name="homekit" catalog="system" width="128" height="106"/>
+        <image name="magnifyingglass" catalog="system" width="128" height="115"/>
         <image name="plus" catalog="system" width="128" height="113"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
