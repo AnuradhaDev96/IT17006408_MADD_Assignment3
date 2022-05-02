@@ -16,6 +16,8 @@ class HomeTabViewController: UIViewController {
         self.navigationItem.setHidesBackButton(true, animated: false);
         
         featureProductsCollectionView.dataSource = self
+        //featureProductsCollectionView.delegate = self
+        //featureProductsCollectionView.collectionViewLayout = UICollectionViewLayout()
     }
 
 
@@ -33,7 +35,6 @@ class HomeTabViewController: UIViewController {
 }
 
 extension HomeTabViewController: UICollectionViewDataSource {
-    //func featureProductsCollectionView(_ collectionView: UICollectionView, numberOfItemsInSection)
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return featuredproducts.count
     }
@@ -44,3 +45,10 @@ extension HomeTabViewController: UICollectionViewDataSource {
         return cell
     }
 }
+extension HomeTabViewController: UICollectionViewDelegateFlowLayout {
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: 200, height: 250)
+    }
+}
+
+
