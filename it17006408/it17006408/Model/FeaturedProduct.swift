@@ -38,3 +38,10 @@ let allFeaturedproducts: [FeaturedProduct] = [
     FeaturedProduct(productName: "Mac Mouse", image: UIImage(named: "lcd_monitor") ?? UIImage(), productPrice: "$50.00",productCode: 458712, availableUnits: 20),
     FeaturedProduct(productName: "Printer", image: UIImage(named: "led_monitor") ?? UIImage(), productPrice: "$65.20",productCode: 458712, availableUnits: 20)
 ]
+
+let newProducts: [FeaturedProduct] = [
+    FeaturedProduct(productName: "Dell Laptop", image: UIImage(named: "mouse") ?? UIImage(), productPrice: "$200.45", productCode: 458712, availableUnits: 20),
+    FeaturedProduct(productName: "HP Laptop", image: UIImage(named: "keyboard") ?? UIImage(), productPrice: "$500.60", productCode: 458712, availableUnits: 20),
+    FeaturedProduct(productName: "DSLR Camera", image: UIImage(named: "lcd_monitor") ?? UIImage(), productPrice: "$450.00",productCode: 458712, availableUnits: 20),
+    FeaturedProduct(productName: "Lens", image: UIImage(named: "led_monitor") ?? UIImage(), productPrice: "$650.20",  productCode: 458712, availableUnits: 20)
+]

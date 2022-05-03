@@ -10,6 +10,7 @@ import UIKit
 class HomeTabViewController: UIViewController {
 
     @IBOutlet weak var featureProductsCollectionView: UICollectionView!
+    @IBOutlet weak var newProductsCollectionView: UICollectionView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -17,31 +18,32 @@ class HomeTabViewController: UIViewController {
         
         featureProductsCollectionView.dataSource = self
         featureProductsCollectionView.delegate = self
+        
+        newProductsCollectionView.dataSource = self
         //featureProductsCollectionView.collectionViewLayout = UICollectionViewLayout()
     }
-
-
-    
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
 
 extension HomeTabViewController: UICollectionViewDataSource, UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return featuredproducts.count
+        var count:Int = 0;
+        if (collectionView == featureProductsCollectionView) {
+            count = featuredproducts.count
+        }
+        if (collectionView == newProductsCollectionView) {
+            count = newProducts.count
+        }
+        return count;
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ProductCollectionViewCell", for: indexPath) as! ProductCollectionViewCell
-        cell.setup(with: featuredproducts[indexPath.row])
+        if (collectionView == featureProductsCollectionView) {
+            cell.setup(with: featuredproducts[indexPath.row])
+        } else {
+            cell.setup(with: newProducts[indexPath.row])
+        }
+        
         return cell
     }
     
