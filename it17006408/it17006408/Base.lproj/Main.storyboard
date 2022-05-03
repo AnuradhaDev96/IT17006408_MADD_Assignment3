@@ -477,6 +477,9 @@
                                             <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <color key="baseBackgroundColor" systemColor="systemGray3Color"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="onTapIncreaseQuantityButton:" destination="xt9-IX-JEy" eventType="touchUpInside" id="5Zs-Sl-dyc"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nqW-0O-ynw">
                                         <rect key="frame" x="20" y="20" width="44" height="31"/>
@@ -489,6 +492,9 @@
                                             <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <color key="baseBackgroundColor" systemColor="systemGray3Color"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="onTapReduceQuantityButton:" destination="xt9-IX-JEy" eventType="touchUpInside" id="SRD-KB-fpP"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="99" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="unp-Ad-26P">
                                         <rect key="frame" x="83" y="25" width="21" height="21"/>
@@ -580,6 +586,7 @@
                         <outlet property="productImageView" destination="rer-h8-uaH" id="2sk-Vh-xnY"/>
                         <outlet property="productNameLabel" destination="sez-hH-4d2" id="Ov3-dK-yGh"/>
                         <outlet property="productPriceLabel" destination="x9Y-0v-JNi" id="s7N-fd-981"/>
+                        <outlet property="productQuantity" destination="unp-Ad-26P" id="Ddo-ql-32j"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pee-1q-kfu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -1102,6 +1109,7 @@
                     <view key="view" contentMode="scaleToFill" id="v5t-Pu-LD1">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="CTx-Ba-4nv"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                 </viewController>

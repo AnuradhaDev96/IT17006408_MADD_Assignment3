@@ -14,9 +14,15 @@ class ProductDetailViewController: UIViewController {
     @IBOutlet weak var productCodeLabel: UILabel!
     @IBOutlet weak var availableUnitsLabel: UILabel!
     @IBOutlet weak var productPriceLabel: UILabel!
+    @IBOutlet weak var productQuantity: UILabel!
     
     var name = "";
     var productToDisplay: FeaturedProduct?
+    var quantity: Int = 0 {
+        didSet {
+            productQuantity.text = "\(quantity)"
+        }
+    };
     
     
     override func viewWillAppear(_ animated: Bool) {
@@ -26,6 +32,8 @@ class ProductDetailViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        quantity = 0;
+        
         productNameLabel.text = productToDisplay?.productName
         productCodeLabel.text = "Code: \(productToDisplay?.productCode ?? 000000)"
         productImageView.image = productToDisplay?.image
@@ -39,7 +47,21 @@ class ProductDetailViewController: UIViewController {
         productToDisplay = product
     }
     
-
+    @IBAction func onTapReduceQuantityButton(_ sender: Any) {
+        guard quantity <= 0 else {
+            quantity -= 1
+            return
+        }
+    }
+    
+    
+    @IBAction func onTapIncreaseQuantityButton(_ sender: Any) {
+        guard quantity >= 99 else {
+            quantity += 1
+            return
+        }
+    }
+    
     /*
     // MARK: - Navigation
 
