@@ -19,7 +19,7 @@ class ProductCollectionViewCell: UICollectionViewCell {
     
     func setup(with product: FeaturedProduct) {
         productImage.image = product.image
-        productName.text = product.poductName
+        productName.text = product.productName
         productPrice.text = product.productPrice
     }    
 }

@@ -47,8 +47,12 @@ extension HomeTabViewController: UICollectionViewDataSource, UICollectionViewDel
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let detailViewController = self.storyboard!.instantiateViewController(withIdentifier: "ProductDetailViewController") as? ProductDetailViewController
+        print("####path pint:\(indexPath.row)")
+        print("####value pint:\(featuredproducts[indexPath.row].productName)")
         
+        detailViewController?.name = featuredproducts[indexPath.row].productName
         detailViewController?.setupDetails(with: featuredproducts[indexPath.row])
+        
         
         //let tap = UITapGestureRecognizer(target: self, action: #selector(self.someViewInMyCellTapped(_:)))
         //someViewInMyCell.addGestureRecognizer(tap)

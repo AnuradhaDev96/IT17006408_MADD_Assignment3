@@ -15,6 +15,10 @@ class ProductDetailViewController: UIViewController {
     @IBOutlet weak var availableUnitsLabel: UILabel!
     @IBOutlet weak var productPriceLabel: UILabel!
     
+    var name = "";
+    var productToDisplay: FeaturedProduct?
+    
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         self.navigationItem.hidesBackButton = true
@@ -22,14 +26,17 @@ class ProductDetailViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        productNameLabel.text = productToDisplay?.productName
+        productCodeLabel.text = "Code: \(productToDisplay?.productCode ?? 000000)"
+        productImageView.image = productToDisplay?.image
+        availableUnitsLabel.text = "\(productToDisplay?.availableUnits ?? 0) units available"
+        productPriceLabel.text = productToDisplay?.productPrice
 
         // Do any additional setup after loading the view.
     }
     
     func setupDetails(with product: FeaturedProduct) {
-        productNameLabel?.text = product.poductName
-        productImageView?.image = product.image
+        productToDisplay = product
     }
     
 
