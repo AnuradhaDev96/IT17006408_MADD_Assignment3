@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C2002D702821B37E00810642 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2002D6F2821B37E00810642 /* SignUpViewController.swift */; };
 		C23CF6C428204CD500BE09BF /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23CF6C328204CD500BE09BF /* ForgotPasswordViewController.swift */; };
 		C23CF6C62820618C00BE09BF /* AllFeaturedProductsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23CF6C52820618C00BE09BF /* AllFeaturedProductsViewController.swift */; };
 		C23CF6C8282077E100BE09BF /* ProductDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23CF6C7282077E100BE09BF /* ProductDetailViewController.swift */; };
@@ -48,6 +49,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C2002D6F2821B37E00810642 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		C23CF6C328204CD500BE09BF /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
 		C23CF6C52820618C00BE09BF /* AllFeaturedProductsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllFeaturedProductsViewController.swift; sourceTree = "<group>"; };
 		C23CF6C7282077E100BE09BF /* ProductDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailViewController.swift; sourceTree = "<group>"; };
@@ -129,6 +131,7 @@
 				C23CF6C52820618C00BE09BF /* AllFeaturedProductsViewController.swift */,
 				C23CF6C7282077E100BE09BF /* ProductDetailViewController.swift */,
 				C298FF472821654C00236682 /* AboutUsViewController.swift */,
+				C2002D6F2821B37E00810642 /* SignUpViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -332,6 +335,7 @@
 				C23CF6C8282077E100BE09BF /* ProductDetailViewController.swift in Sources */,
 				C2B21D26281D8C8D00470BE5 /* SceneDelegate.swift in Sources */,
 				C23CF6C62820618C00BE09BF /* AllFeaturedProductsViewController.swift in Sources */,
+				C2002D702821B37E00810642 /* SignUpViewController.swift in Sources */,
 				C298B695281F37C700305846 /* HomeTabViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
