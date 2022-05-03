@@ -57,6 +57,9 @@
                                 <buttonConfiguration key="configuration" style="plain" title="About Us">
                                     <color key="baseForegroundColor" systemColor="labelColor"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <segue destination="A0E-ov-knE" kind="show" id="IlJ-VW-St0"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CnQ-q7-feU">
                                 <rect key="frame" x="308" y="796" width="86" height="31"/>
@@ -93,7 +96,7 @@
             <objects>
                 <viewController id="4mu-46-5ty" customClass="ForgotPasswordViewController" customModule="it17006408" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Lr6-Gz-Fxd">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="CustomImages" translatesAutoresizingMaskIntoConstraints="NO" id="UsW-jm-7fa">
@@ -101,12 +104,12 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Forgot Password" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KJw-Fp-ZlT">
-                                <rect key="frame" x="34" y="156" width="245" height="36"/>
+                                <rect key="frame" x="34" y="112" width="245" height="36"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Your email address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1jN-6a-nYu">
+                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Your email address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1jN-6a-nYu">
                                 <rect key="frame" x="30" y="294.5" width="354" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" textContentType="email"/>
@@ -118,6 +121,9 @@
                                 <buttonConfiguration key="configuration" style="plain" title="About Us">
                                     <color key="baseForegroundColor" systemColor="labelColor"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <segue destination="A0E-ov-knE" kind="show" id="L5s-jd-xt1"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZCn-ML-gQt">
                                 <rect key="frame" x="310" y="794" width="86" height="31"/>
@@ -128,12 +134,12 @@
                                 </buttonConfiguration>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please enter your email address below. An email address will be sent with a link for you to reset your password." lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aZR-Ka-oia" customClass="Forgot">
-                                <rect key="frame" x="30" y="212" width="354" height="52.5"/>
+                                <rect key="frame" x="30" y="168" width="354" height="52.5"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BjW-MZ-aSZ">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BjW-MZ-aSZ">
                                 <rect key="frame" x="33" y="353.5" width="348" height="31"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="SEND PASSWORD RESET LINK" titleAlignment="center">
@@ -183,7 +189,7 @@
             <objects>
                 <viewController id="8Xi-HG-jP4" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="LYK-tP-mEM">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DiI-qh-kkA">
@@ -220,7 +226,7 @@
             <objects>
                 <viewController id="dEx-Zz-caW" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3je-Mk-p8m">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Bbf-D8-VOq">
@@ -255,7 +261,7 @@
             <objects>
                 <viewController id="7B0-6Q-2rH" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9WA-fB-vqi">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="j5K-LN-7if">
@@ -290,11 +296,11 @@
             <objects>
                 <viewController id="yzp-EJ-dHG" customClass="AllFeaturedProductsViewController" customModule="it17006408" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dhy-2d-ee5">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="nKm-TW-U4p">
-                                <rect key="frame" x="30" y="113" width="354" height="700"/>
+                                <rect key="frame" x="30" y="81" width="354" height="732"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="B9k-y9-idP">
                                     <size key="itemSize" width="164" height="205"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -598,11 +604,11 @@
             <objects>
                 <viewController id="Bpy-7y-nBq" customClass="HomeTabViewController" customModule="it17006408" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tJ7-hQ-8ld">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rWq-dO-qnr">
-                                <rect key="frame" x="0.0" y="50" width="414" height="44"/>
+                                <rect key="frame" x="0.0" y="50" width="414" height="56"/>
                                 <color key="barTintColor" systemColor="systemBackgroundColor"/>
                                 <items>
                                     <navigationItem id="Fm6-2O-y7R">
@@ -618,7 +624,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="8Ow-NV-c1l">
-                                <rect key="frame" x="30" y="163" width="354" height="450"/>
+                                <rect key="frame" x="30" y="175" width="354" height="438"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="8Im-Ah-EdX">
                                     <size key="itemSize" width="164" height="205"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -692,13 +698,13 @@
                                 </cells>
                             </collectionView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Featured Products" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gpD-yW-Zpd">
-                                <rect key="frame" x="30" y="121" width="177" height="24"/>
+                                <rect key="frame" x="30" y="133" width="177" height="24"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dRf-GN-YrZ">
-                                <rect key="frame" x="283" y="121" width="101" height="24"/>
+                                <rect key="frame" x="283" y="133" width="101" height="24"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain">
                                     <attributedString key="attributedTitle">
@@ -824,7 +830,7 @@
             <objects>
                 <viewController id="BRT-cc-OJd" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="RPF-6c-n07">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="CustomImages" translatesAutoresizingMaskIntoConstraints="NO" id="MkD-yd-hhm">
@@ -885,6 +891,9 @@
                                 <buttonConfiguration key="configuration" style="plain" title="About Us">
                                     <color key="baseForegroundColor" systemColor="labelColor"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <segue destination="A0E-ov-knE" kind="show" id="qJM-3v-lnE"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RGQ-XT-Yw6">
                                 <rect key="frame" x="125" y="796" width="180" height="31"/>
@@ -943,7 +952,7 @@
             <objects>
                 <viewController storyboardIdentifier="loginVC" id="i4e-md-6cd" customClass="LoginViewController" customModule="it17006408" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="c6P-DE-yC3">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="CustomImages" translatesAutoresizingMaskIntoConstraints="NO" id="dNU-Kt-ztp">
@@ -995,6 +1004,9 @@
                                 <buttonConfiguration key="configuration" style="plain" title="About Us">
                                     <color key="baseForegroundColor" systemColor="labelColor"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <segue destination="A0E-ov-knE" kind="show" id="1zE-tf-BV2"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mLp-Rz-mom">
                                 <rect key="frame" x="116" y="796" width="180" height="31"/>
@@ -1090,7 +1102,7 @@
                     </tabBarItem>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Cv6-Z7-ph1">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -1102,31 +1114,106 @@
             </objects>
             <point key="canvasLocation" x="1462.3188405797102" y="1541.5178571428571"/>
         </scene>
-        <!--View Controller-->
+        <!--About Us-->
         <scene sceneID="M5S-Xr-m2X">
             <objects>
-                <viewController id="A0E-ov-knE" sceneMemberID="viewController">
+                <viewController id="A0E-ov-knE" customClass="AboutUsViewController" customModule="it17006408" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="v5t-Pu-LD1">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fYh-Ol-aHr">
+                                <rect key="frame" x="35.5" y="328" width="343" height="152"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="152" id="cCA-c1-19C"/>
+                                    <constraint firstAttribute="width" constant="343" id="hRp-vY-oa8"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <string key="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla non mattis nisi, sit amet ornare felis. Aenean ut nunc et nisl facilisis blandit nec dapibus purus. Curabitur feugiat fringilla augue in dignissim. Maecenas ultricies interdum lobortis. Phasellus ut tortor in ante laoreet faucibus at vel sapien. Fusce sed sem lacus. Nulla sit amet malesuada sem. Aliquam erat volutpat. </string>
+                                        <attributes>
+                                            <font key="NSFont" size="14" name="Helvetica"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="2" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eHy-12-e2j">
+                                <rect key="frame" x="35.5" y="483" width="343" height="125"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="125" id="5Ym-Rh-lk7"/>
+                                    <constraint firstAttribute="width" constant="343" id="gKu-mX-x8v"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <string key="content">Pellentesque eget purus neque. Curabitur vulputate arcu interdum elementum elementum. Vestibulum convallis tristique scelerisque. Nunc id vestibulum massa. Curabitur eu quam id urna consectetur finibus at vitae urna. Donec maximus ultricies orci, ac molestie nulla molestie nec.</string>
+                                        <attributes>
+                                            <font key="NSFont" size="14" name="Helvetica"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" lineSpacing="2" paragraphSpacing="15" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="StoreInnerView" translatesAutoresizingMaskIntoConstraints="NO" id="rVO-tS-KKk">
+                                <rect key="frame" x="35.5" y="70" width="343" height="224"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="343" id="YO7-PC-dx4"/>
+                                    <constraint firstAttribute="height" constant="224" id="gfU-7n-nVD"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="CTx-Ba-4nv"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="fYh-Ol-aHr" firstAttribute="top" secondItem="rVO-tS-KKk" secondAttribute="bottom" constant="34" id="6n5-b3-Maa"/>
+                            <constraint firstItem="rVO-tS-KKk" firstAttribute="top" secondItem="CTx-Ba-4nv" secondAttribute="top" constant="26" id="DAW-Ec-atp"/>
+                            <constraint firstItem="rVO-tS-KKk" firstAttribute="centerX" secondItem="v5t-Pu-LD1" secondAttribute="centerX" id="H5j-vI-cFk"/>
+                            <constraint firstItem="CTx-Ba-4nv" firstAttribute="trailing" secondItem="rVO-tS-KKk" secondAttribute="trailing" constant="35.5" id="JNv-rC-lUm"/>
+                            <constraint firstItem="CTx-Ba-4nv" firstAttribute="trailing" secondItem="fYh-Ol-aHr" secondAttribute="trailing" constant="35.5" id="LAb-rf-4Af"/>
+                            <constraint firstItem="eHy-12-e2j" firstAttribute="top" secondItem="fYh-Ol-aHr" secondAttribute="bottom" constant="3" id="MIx-lK-CLX"/>
+                            <constraint firstItem="rVO-tS-KKk" firstAttribute="leading" secondItem="CTx-Ba-4nv" secondAttribute="leading" constant="35.5" id="TW7-el-ZRe"/>
+                            <constraint firstItem="CTx-Ba-4nv" firstAttribute="trailing" secondItem="eHy-12-e2j" secondAttribute="trailing" constant="35.5" id="UjT-eb-Sjq"/>
+                            <constraint firstItem="fYh-Ol-aHr" firstAttribute="top" secondItem="rVO-tS-KKk" secondAttribute="bottom" constant="34" id="VsH-wW-A1D"/>
+                            <constraint firstItem="eHy-12-e2j" firstAttribute="top" secondItem="fYh-Ol-aHr" secondAttribute="bottom" constant="3" id="cfK-7y-PFB"/>
+                            <constraint firstItem="eHy-12-e2j" firstAttribute="leading" secondItem="CTx-Ba-4nv" secondAttribute="leading" constant="35.5" id="gVN-mQ-lwL"/>
+                            <constraint firstItem="eHy-12-e2j" firstAttribute="centerX" secondItem="v5t-Pu-LD1" secondAttribute="centerX" id="jQR-9C-hX1"/>
+                            <constraint firstItem="fYh-Ol-aHr" firstAttribute="centerX" secondItem="v5t-Pu-LD1" secondAttribute="centerX" id="kpB-Sd-ONq"/>
+                            <constraint firstItem="fYh-Ol-aHr" firstAttribute="leading" secondItem="CTx-Ba-4nv" secondAttribute="leading" constant="35.5" id="mqe-RM-S1n"/>
+                            <constraint firstItem="CTx-Ba-4nv" firstAttribute="bottom" secondItem="eHy-12-e2j" secondAttribute="bottom" constant="234" id="wIr-qJ-AFJ"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="About Us" id="IhZ-UC-UVa">
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="chevron.backward" catalog="system" id="vtP-tA-lFv">
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="navigateBack:" destination="A0E-ov-knE" id="dG5-zl-iGD"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mVq-pP-da0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3004" y="2263"/>
+            <point key="canvasLocation" x="302.89855072463769" y="807.58928571428567"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="Xym-Ie-3QK"/>
-        <segue reference="RI2-vs-xQz"/>
+        <segue reference="L5s-jd-xt1"/>
+        <segue reference="XFS-1s-Ha5"/>
+        <segue reference="oHY-Qg-33z"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="CustomImages" width="500" height="500"/>
         <image name="MenuIcon" width="24" height="24"/>
         <image name="MyOrdersIcon" width="24" height="24"/>
+        <image name="StoreInnerView" width="750" height="563"/>
         <image name="cart" catalog="system" width="128" height="102"/>
+        <image name="chevron.backward" catalog="system" width="96" height="128"/>
         <image name="homekit" catalog="system" width="128" height="106"/>
         <image name="magnifyingglass" catalog="system" width="128" height="115"/>
         <image name="minus" catalog="system" width="128" height="24"/>

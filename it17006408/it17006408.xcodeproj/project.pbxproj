@@ -18,6 +18,7 @@
 		C298B696281F37C700305846 /* HomeTabViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C298B694281F37C700305846 /* HomeTabViewController.xib */; };
 		C298B699281F39FC00305846 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C298B697281F39FC00305846 /* MainTabBarController.swift */; };
 		C298B69A281F39FC00305846 /* MainTabBarController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C298B698281F39FC00305846 /* MainTabBarController.xib */; };
+		C298FF482821654C00236682 /* AboutUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C298FF472821654C00236682 /* AboutUsViewController.swift */; };
 		C2B21D24281D8C8D00470BE5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2B21D23281D8C8D00470BE5 /* AppDelegate.swift */; };
 		C2B21D26281D8C8D00470BE5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2B21D25281D8C8D00470BE5 /* SceneDelegate.swift */; };
 		C2B21D28281D8C8D00470BE5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2B21D27281D8C8D00470BE5 /* ViewController.swift */; };
@@ -58,6 +59,7 @@
 		C298B694281F37C700305846 /* HomeTabViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeTabViewController.xib; sourceTree = "<group>"; };
 		C298B697281F39FC00305846 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		C298B698281F39FC00305846 /* MainTabBarController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainTabBarController.xib; sourceTree = "<group>"; };
+		C298FF472821654C00236682 /* AboutUsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsViewController.swift; sourceTree = "<group>"; };
 		C2B21D20281D8C8D00470BE5 /* it17006408.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = it17006408.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2B21D23281D8C8D00470BE5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C2B21D25281D8C8D00470BE5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -126,6 +128,7 @@
 				C23CF6C328204CD500BE09BF /* ForgotPasswordViewController.swift */,
 				C23CF6C52820618C00BE09BF /* AllFeaturedProductsViewController.swift */,
 				C23CF6C7282077E100BE09BF /* ProductDetailViewController.swift */,
+				C298FF472821654C00236682 /* AboutUsViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -322,6 +325,7 @@
 				C281A8E1281FD89A00F712A9 /* FeaturedProduct.swift in Sources */,
 				C2B21D24281D8C8D00470BE5 /* AppDelegate.swift in Sources */,
 				C281A8DE281FC41500F712A9 /* ProductCollectionViewCell.swift in Sources */,
+				C298FF482821654C00236682 /* AboutUsViewController.swift in Sources */,
 				C298B699281F39FC00305846 /* MainTabBarController.swift in Sources */,
 				C23CF6C428204CD500BE09BF /* ForgotPasswordViewController.swift in Sources */,
 				C298B691281F09C800305846 /* LoginViewController.swift in Sources */,

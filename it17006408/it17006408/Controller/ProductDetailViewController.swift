@@ -18,6 +18,7 @@ class ProductDetailViewController: UIViewController {
     
     var name = "";
     var productToDisplay: FeaturedProduct?
+    var maximumQuantity: Int = 0;
     var quantity: Int = 0 {
         didSet {
             productQuantity.text = "\(quantity)"
@@ -39,6 +40,8 @@ class ProductDetailViewController: UIViewController {
         productImageView.image = productToDisplay?.image
         availableUnitsLabel.text = "\(productToDisplay?.availableUnits ?? 0) units available"
         productPriceLabel.text = productToDisplay?.productPrice
+        
+        maximumQuantity = productToDisplay?.availableUnits ?? 0
 
         // Do any additional setup after loading the view.
     }
@@ -56,7 +59,7 @@ class ProductDetailViewController: UIViewController {
     
     
     @IBAction func onTapIncreaseQuantityButton(_ sender: Any) {
-        guard quantity >= 99 else {
+        guard quantity >= maximumQuantity else {
             quantity += 1
             return
         }
