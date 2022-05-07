@@ -864,7 +864,7 @@
                                                     </attributedString>
                                                 </buttonConfiguration>
                                                 <connections>
-                                                    <segue destination="yzp-EJ-dHG" kind="show" id="G8x-XG-YSk"/>
+                                                    <segue destination="yzp-EJ-dHG" kind="show" identifier="goToFirstTabSegue" id="G8x-XG-YSk"/>
                                                 </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Featured Products" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gpD-yW-Zpd">
@@ -1032,6 +1032,9 @@
                                     <fontDescription key="titleFontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="14"/>
                                     <color key="baseBackgroundColor" red="0.0" green="0.5" blue="0.47553605459999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="onTapSignUpButton:" destination="BRT-cc-OJd" eventType="touchUpInside" id="yn2-Fc-ydf"/>
+                                </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hlq-aE-zln">
                                 <rect key="frame" x="58" y="524" width="298" height="71"/>
@@ -1171,15 +1174,21 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="txtConfirmPassword" destination="PYW-ex-tG9" id="oK4-Ah-32r"/>
+                        <outlet property="txtEmail" destination="oU6-Na-8iB" id="fDQ-kr-7Si"/>
+                        <outlet property="txtFullName" destination="Qid-4A-K5X" id="7oY-TQ-Ti0"/>
+                        <outlet property="txtPassword" destination="Mjj-XF-vJw" id="wWm-WH-HxS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wrd-JP-oC9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1760.8695652173915" y="75.669642857142847"/>
         </scene>
-        <!--Login View Controller-->
+        <!--Login With Credentials View Controller-->
         <scene sceneID="tFx-i8-m5p">
             <objects>
-                <viewController storyboardIdentifier="loginVC" id="i4e-md-6cd" customClass="LoginViewController" customModule="it17006408" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="loginVC" id="i4e-md-6cd" customClass="LoginWithCredentialsViewController" customModule="it17006408" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="c6P-DE-yC3">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1217,7 +1226,7 @@
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8Bk-vN-aWl">
                                 <rect key="frame" x="33" y="362" width="348" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" textContentType="password"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xZs-8F-5TI">
                                 <rect key="frame" x="33" y="437" width="348" height="31"/>
@@ -1227,7 +1236,8 @@
                                     <color key="baseBackgroundColor" red="0.0" green="0.71090520450000005" blue="0.67612211229999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="hcB-mN-OTf" kind="show" id="AYI-Yf-51j"/>
+                                    <action selector="onTapLoginUiButton:" destination="i4e-md-6cd" eventType="touchUpInside" id="ss8-C6-jfk"/>
+                                    <segue destination="hcB-mN-OTf" kind="show" identifier="goToHomeSeage" id="AYI-Yf-51j"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9TK-Ek-iIe">
@@ -1378,6 +1388,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="rLS-Al-QVO"/>
+                    <connections>
+                        <outlet property="loginUIButton" destination="xZs-8F-5TI" id="8hL-5w-GiQ"/>
+                        <outlet property="passwordTextField" destination="8Bk-vN-aWl" id="hal-Zm-JcS"/>
+                        <outlet property="usernameTextField" destination="nZX-cL-J5e" id="7M2-Np-bEf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Uxs-Ps-nqC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

@@ -9,6 +9,11 @@ import UIKit
 
 class SignUpViewController: UIViewController {
 
+    @IBOutlet weak var txtFullName: UITextField!
+    @IBOutlet weak var txtEmail: UITextField!
+    @IBOutlet weak var txtPassword: UITextField!
+    @IBOutlet weak var txtConfirmPassword: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
              // Do any additional setup after loading the view.
@@ -18,6 +23,9 @@ class SignUpViewController: UIViewController {
         self.navigationController?.popViewController(animated: true)
     }
     
+    @IBAction func onTapSignUpButton(_ sender: Any) {
+        
+    }
     /*
     // MARK: - Navigation
 

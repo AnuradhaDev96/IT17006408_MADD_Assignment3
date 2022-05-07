@@ -20,6 +20,7 @@
 		C298B699281F39FC00305846 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C298B697281F39FC00305846 /* MainTabBarController.swift */; };
 		C298B69A281F39FC00305846 /* MainTabBarController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C298B698281F39FC00305846 /* MainTabBarController.xib */; };
 		C298FF482821654C00236682 /* AboutUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C298FF472821654C00236682 /* AboutUsViewController.swift */; };
+		C29C2ECF2826300C00BFB310 /* LoginWithCredentialsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29C2ECE2826300C00BFB310 /* LoginWithCredentialsViewController.swift */; };
 		C2B21D24281D8C8D00470BE5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2B21D23281D8C8D00470BE5 /* AppDelegate.swift */; };
 		C2B21D26281D8C8D00470BE5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2B21D25281D8C8D00470BE5 /* SceneDelegate.swift */; };
 		C2B21D28281D8C8D00470BE5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2B21D27281D8C8D00470BE5 /* ViewController.swift */; };
@@ -62,6 +63,7 @@
 		C298B697281F39FC00305846 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		C298B698281F39FC00305846 /* MainTabBarController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainTabBarController.xib; sourceTree = "<group>"; };
 		C298FF472821654C00236682 /* AboutUsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsViewController.swift; sourceTree = "<group>"; };
+		C29C2ECE2826300C00BFB310 /* LoginWithCredentialsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginWithCredentialsViewController.swift; sourceTree = "<group>"; };
 		C2B21D20281D8C8D00470BE5 /* it17006408.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = it17006408.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2B21D23281D8C8D00470BE5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C2B21D25281D8C8D00470BE5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -132,6 +134,7 @@
 				C23CF6C7282077E100BE09BF /* ProductDetailViewController.swift */,
 				C298FF472821654C00236682 /* AboutUsViewController.swift */,
 				C2002D6F2821B37E00810642 /* SignUpViewController.swift */,
+				C29C2ECE2826300C00BFB310 /* LoginWithCredentialsViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -335,6 +338,7 @@
 				C23CF6C8282077E100BE09BF /* ProductDetailViewController.swift in Sources */,
 				C2B21D26281D8C8D00470BE5 /* SceneDelegate.swift in Sources */,
 				C23CF6C62820618C00BE09BF /* AllFeaturedProductsViewController.swift in Sources */,
+				C29C2ECF2826300C00BFB310 /* LoginWithCredentialsViewController.swift in Sources */,
 				C2002D702821B37E00810642 /* SignUpViewController.swift in Sources */,
 				C298B695281F37C700305846 /* HomeTabViewController.swift in Sources */,
 			);
