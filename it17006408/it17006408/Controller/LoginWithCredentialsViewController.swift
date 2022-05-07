@@ -42,7 +42,8 @@ class LoginWithCredentialsViewController: UIViewController {
             emptyAlert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
 
             // show the alert
-            self.present(emptyAlert, animated: true, completion: nil)        }
+            self.present(emptyAlert, animated: true, completion: nil)
+        }
     }
     
     

@@ -24,7 +24,29 @@ class SignUpViewController: UIViewController {
     }
     
     @IBAction func onTapSignUpButton(_ sender: Any) {
-        
+        if (txtFullName.text != "" && txtEmail.text != "" && txtPassword.text != "" && txtConfirmPassword.text != "") {
+            
+            if (txtPassword.text != txtConfirmPassword.text) {
+                let passwordMismatchAlert = UIAlertController(title: "Passwords do not Match", message: "Confirm password is incorrect", preferredStyle: UIAlertController.Style.alert)
+                
+                passwordMismatchAlert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
+
+                // show the alert
+                self.present(passwordMismatchAlert, animated: true, completion: nil)
+            } else {
+                self.performSegue(withIdentifier: "successfulRegiterSegue", sender: self)
+                
+            }   
+        } else {
+            let emptyAlert = UIAlertController(title: "Required Fields are Empty", message: "Please fill all fields", preferredStyle: UIAlertController.Style.alert)
+
+            // add an action (button)
+            emptyAlert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
+
+            // show the alert
+            self.present(emptyAlert, animated: true, completion: nil)
+            
+        }
     }
     /*
     // MARK: - Navigation
