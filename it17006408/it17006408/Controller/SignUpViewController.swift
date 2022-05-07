@@ -35,8 +35,7 @@ class SignUpViewController: UIViewController {
                 self.present(passwordMismatchAlert, animated: true, completion: nil)
             } else {
                 self.performSegue(withIdentifier: "successfulRegiterSegue", sender: self)
-                
-            }   
+            }
         } else {
             let emptyAlert = UIAlertController(title: "Required Fields are Empty", message: "Please fill all fields", preferredStyle: UIAlertController.Style.alert)
 
